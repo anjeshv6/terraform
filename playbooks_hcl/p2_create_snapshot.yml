@@ -1,0 +1,14 @@
+---
+- name: playbook for creation of ebs snapshot
+  hosts: localhost
+  tasks:
+  - name: creating snapshop
+    ec2_snapshot:
+      region: ap-south-1
+      instance_id: i-0d5a850f1681eba5c
+      device_name: /dev/sda1
+    tags: create
+
+
+
+

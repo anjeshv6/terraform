@@ -1,0 +1,18 @@
+---
+- name: playbook for status of ebs snapshot
+  hosts: localhost
+  tasks:
+  - name: status snapshop
+    ec2_snapshot_facts:
+      region: ap-south-1
+      #key: state
+      filters:
+        snapshot-id: snap-06bc3a22c0babd747
+    register: output
+  
+  - debug: #var=output.snapshots
+      msg: 'state is :{{output.snapshots[0].state}}'
+
+
+
+

@@ -1,0 +1,6 @@
+---
+- name: playbook for modify of ebs snapshot
+  hosts: localhost
+  tasks:
+  - name: modify snapshots
+    command: aws ec2 modify-snapshot-attribute --snapshot-id snap-06bc3a22c0babd747  --attribute createVolumePermission --operation-type add --group-names all

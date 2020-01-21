@@ -1,6 +1,7 @@
 ---
 - name: creating user
   hosts: localhost
+  become: true
   tasks:
   - name: user adding task
     user:

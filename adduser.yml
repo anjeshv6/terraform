@@ -1,0 +1,7 @@
+---
+- name: creating user
+  hosts: localhost
+  tasks:
+  - name: user adding task
+    user:
+      name: sample_git_user

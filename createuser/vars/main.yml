@@ -1,4 +1,5 @@
 ---
-uname
-pass1
-group1
+uname: "{{uname}}"
+pass1: "{{pass1}}"
+group1: "{{group1}}"
+home1: "{{home1}}"

@@ -1,8 +1,10 @@
 ---
 - hosts: all
   become: true
+  remote_user: iac_admin
   tasks:
-  user:
-    name: anjesh_test
-    state: absent
-
+  - name: task to delete user
+    user:
+      name: anjesh_test
+      state: absent
+      remove: yes

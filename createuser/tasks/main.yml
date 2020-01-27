@@ -1,0 +1,8 @@
+---
+# tasks file for createuser
+- name: create a user
+  user: 
+    name: "{{uname}}"
+    password: "{{pass1}}"
+    group: "{{group1}}"
+    home: "{{home1}}"

@@ -1,0 +1,9 @@
+---
+- name: playbook for describe volume to a host
+  hosts: localhost
+  tasks:
+  - name: describe volume
+    command: aws ec2 describe-volumes
+    register: output
+
+  - debug: var=output.stdout_lines

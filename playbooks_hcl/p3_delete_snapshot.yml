@@ -1,0 +1,10 @@
+---
+- name: playbook for delete of ebs snapshot
+  hosts: localhost
+  tasks:
+  - name: p2_delete ebs
+    local_action:
+      region: ap-south-1
+      module: ec2_snapshot
+      snapshot_id: snap-080b1b38d0d382813
+      state: absent        

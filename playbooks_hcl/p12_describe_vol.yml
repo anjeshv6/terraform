@@ -1,0 +1,9 @@
+---
+- name: playbook for describe volume to a host
+  hosts: localhost
+  tasks:
+  - name: describe volume
+    command: aws ec2 describe-volumes --region ap-south-1 --filters Name=attachment.instance-id,Values=i-038a5c7c8fed5e72b Name=attachment.delete-on-termination,Values=true
+    register: output
+
+  - debug: var=output.stdout_lines

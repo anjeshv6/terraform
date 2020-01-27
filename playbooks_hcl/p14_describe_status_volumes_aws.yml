@@ -1,0 +1,11 @@
+---
+- name: playbook for describe status of volume
+  hosts: localhost
+  tasks:
+  - name: describe volume status
+    ec2_vol_facts:
+ 
+    register: output
+
+  - debug: 
+      msg: '{{output.volumes[0].status}}'

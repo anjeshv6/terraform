@@ -1,0 +1,14 @@
+---
+- name: playbook for check volume status
+  hosts: localhost
+  tasks:
+  - name: check volume status
+    ec2_vol_facts:
+      #region: ap-south-1
+      filters:
+        volume-id: vol-05d2ef90587237678
+    register: output
+
+  - debug: 
+      msg: '{{output.volumes[0].status}}'
+    

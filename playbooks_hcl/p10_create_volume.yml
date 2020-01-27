@@ -1,0 +1,15 @@
+---
+- name: playbook for create volume in same region
+  hosts: localhost
+  tasks:
+  - name: create volume
+    ec2_vol:
+      region: ap-south-1
+      zone: ap-south-1b
+      volume_type: gp2
+      iops: 100
+      #snapshot: snap-0443d84c4d094af1a
+      #instance: i-0d5a850f1681eba5c
+      volume_size: 4
+      device_name: /dev/sdb    
+      

@@ -1,0 +1,25 @@
+---
+- name: playbook for delete volume
+  hosts: localhost
+  tasks:
+  - name: stopping ec2 instance
+    ec2:
+      instance_ids: i-038a5c7c8fed5e72b
+      region: ap-south-1
+      state: stopped
+    
+
+  - name: detach and delete volume
+    ec2_vol:
+      region: ap-south-1
+      id: vol-0a91117481b4bbbed
+      instance: None
+      #state: absent
+     
+  - name: delete instance  
+    ec2_vol:
+      region: ap-south-1
+      id: vol-0a91117481b4bbbed
+      #instance: None
+      state: absent
+       

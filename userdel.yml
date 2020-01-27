@@ -1,6 +1,5 @@
 ---
-- name: playbook for userdel
-  hosts: all
+- hosts: all
   become: true
   tasks:
     user:

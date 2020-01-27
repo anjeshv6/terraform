@@ -1,6 +1,5 @@
 ---
-- hosts: localhost
-  tasks:
-  - name: useradd
-    user: 
-      name: prasanth
+- hosts: all
+  become: true
+  roles:
+  - createuser

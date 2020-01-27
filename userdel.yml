@@ -1,0 +1,9 @@
+---
+- name: playbook for userdel
+  hosts: all
+  become: true
+  tasks:
+    user:
+      name: anjesh_test
+      state: absent
+      remove: yes

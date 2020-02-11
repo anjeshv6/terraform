@@ -1,8 +1,8 @@
 ---
-- name: creating user
-  hosts: localhost
+- name: playbook for creating user
+  hosts: all
   become: true
   tasks:
-  - name: user adding task
+  - name: task for adding user
     user:
-      name: anjeshdemo
+      name: abbvie_user

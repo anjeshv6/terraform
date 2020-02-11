@@ -5,6 +5,6 @@
   tasks:
   - name: task to delete user
     user:
-      name: anjesh_test
+      name: abbvie_user
       state: absent
       remove: yes

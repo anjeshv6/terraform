@@ -6,3 +6,8 @@
   - name: task for adding user
     user:
       name: abbvie_user
+    register: out
+    
+   - name: printing username value
+     debug:
+       msg: '{{out.name}}'

@@ -10,4 +10,4 @@
     
   - name: printing username value
     debug:
-      msg: '{{out.name}}'
+      msg: '{{out.uid}}'

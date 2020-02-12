@@ -8,6 +8,6 @@
       name: abbvie_user
     register: out
     
-  - name: printing username value
-    debug:
-      msg: '{{out.uid}}'
+
+
+

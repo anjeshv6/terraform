@@ -1,1 +1,4 @@
-
+- hosts: all
+  tasks:
+  - name: Ansible create file if it doesn't exist example
+    command: 'ping -c 5 10.1.150.27'

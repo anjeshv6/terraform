@@ -1,4 +1,4 @@
 - hosts: all
   tasks:
   - name: pinging
-    command: 'ping -c 5 10.1.150.27'
+    command: 'ping -c 3 10.1.150.27'

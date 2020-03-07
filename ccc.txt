@@ -57,3 +57,39 @@ userdel.yml
 vik_sample
 Sat Mar  7 09:11:59 UTC 2020
 ================
+adduser.yml
+bbb
+ccc.txt
+createfile.yml
+createuser
+filetoupload
+first.sh
+mainscript.sh
+main.yml
+master.yml
+playbooks_hcl
+README.md
+second.sh
+testping.yml
+userdel.yml
+vik_sample
+Sat Mar  7 09:13:56 UTC 2020
+================
+adduser.yml
+bbb
+ccc.txt
+createfile.yml
+createuser
+filetoupload
+first.sh
+mainscript.sh
+main.yml
+master.yml
+playbooks_hcl
+README.md
+second.sh
+testping.yml
+userdel.yml
+vik_sample
+Sat Mar  7 09:16:53 UTC 2020
+================

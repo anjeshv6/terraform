@@ -7,7 +7,7 @@ do
   date  >> results.txt
   echo "====================================================================" >> results.txt
   sleep 10;
-  git add ccc.txt >> ccc.txt
-  git commit -m "sample gjfvjg" >> ccc.txt
-  git push origin master >> ccc.txt
+  git add results.txt
+  git commit -m "Results by IoT Projects"
+  git push origin master
 done

@@ -1,4 +1,5 @@
 #!/bin/bash
+#First copy code into mainscript.sh then Run command :   bash mainscript.sh
 for i in {1..3};
 do
   echo " Result # $i :" >> results.txt

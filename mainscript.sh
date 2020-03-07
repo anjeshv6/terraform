@@ -3,9 +3,9 @@
 for i in {1..3};
 do
   echo " Result # $i :" >> results.txt
+  date  >> results.txt
   #python gasrun.py >> results.txt
   ls >> results.txt
-  date  >> results.txt
   echo "====================================================================" >> results.txt
   sleep 10;
   git add results.txt
